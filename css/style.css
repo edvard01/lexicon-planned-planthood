@@ -5,8 +5,8 @@ html body {
 }
 
 .content {
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 1440px;
+  margin: 0px 220px;
   background-color: white;
 }
 
@@ -65,8 +65,11 @@ nav {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  width: 80%;
+  width: 100%;
   text-align: center;
+  align-items: center;
+  height: 60px;
+  box-shadow: 0px 4px 4px 0px rgba(3, 56, 47, 0.11);
 }
 
 nav > a {
@@ -78,4 +81,106 @@ nav > a {
   font-weight: 500;
   line-height: normal;
   text-decoration: none;
+  width: 106px;
+  height: 17.155px;
+}
+
+.season-panel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 70vh;
+  text-align: center;
+}
+
+.season-panel > h1 {
+  color: #0a846e;
+  text-align: center;
+  font-family: Maven Pro;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.season-panel > .season-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.season-panel > .season-content > .left-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 377px;
+  height: 377px;
+  border-radius: 239px;
+  border: 14px solid #0a846e;
+  background: #0a846e;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 48px;
+  margin-top: 87px;
+}
+
+.season-panel > .season-content > .left-panel > img {
+  max-width: 197px;
+  max-height: 194px;
+}
+
+.season-panel > .season-content > .right-panel {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+  height: 100%;
+  margin-left: 67px;
+  margin-top: 173px;
+}
+
+.season-panel > .season-content > .right-panel > h1 {
+  color: #1e1e1e;
+  font-family: Open Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.season-panel > .season-content > .right-panel > p {
+  color: #000;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.season-panel > .season-content > .right-panel > button {
+  width: 179px;
+  height: 63px;
+  margin-top: 40px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #0a846e;
+  align-self: flex-end;
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+.season-panel > .bottom-divider {
+  width: 303.236px;
+  height: 0px;
+  transform: rotate(-0.356deg);
+  flex-shrink: 0;
+}
+
+.season-panel > .bottom-divider > img {
+  stroke-width: 3px;
+  stroke: #055647;
+  bottom: 0px;
 }
