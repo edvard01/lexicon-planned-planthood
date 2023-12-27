@@ -1,0 +1,81 @@
+html body {
+  margin: 0;
+  padding: 0;
+  background-color: #fcf6fc;
+}
+
+.content {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+}
+
+header > .left-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-image: url("assets/hand-plant.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header > .left-panel > img {
+  max-width: 190px;
+  max-height: 186px;
+}
+
+header > .right-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+}
+
+header > .right-panel > .top-item {
+  background-color: #9e6d52;
+}
+
+header > .right-panel > .bottom-item {
+  background-color: #0a846e;
+}
+
+header > .right-panel > .header-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+
+header > .right-panel > .header-item > img {
+  max-width: 176px;
+  max-height: 196px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+}
+
+nav > a {
+  color: #055647;
+  text-align: center;
+  font-family: Maven Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
