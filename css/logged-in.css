@@ -1,3 +1,18 @@
+@font-face {
+  font-family: Open sans;
+  src: url(assets/maven-pro/MavenPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Maven Pro;
+  src: url(assets/maven-pro/MavenPro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(assets/lato/Lato-Black.ttf);
+}
+
 html body {
   margin: 0;
   padding: 0;
@@ -310,7 +325,6 @@ footer {
   justify-content: center;
   width: 100%;
   height: 77px;
-  background: #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
