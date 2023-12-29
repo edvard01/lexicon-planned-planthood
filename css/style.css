@@ -13,6 +13,11 @@
   src: url(assets/lato/Lato-Black.ttf);
 }
 
+@font-face {
+  font-family: Inter;
+  src: url(assets/inter/Inter-VariableFont_slnt\wght.ttf);
+}
+
 html body {
   margin: 0;
   padding: 0;
@@ -291,7 +296,13 @@ nav > a {
   line-height: normal;
 }
 
-.planned-plants > .grid > .grid-item > .grid-item-text > .line-2 > button {
+.planned-plants
+  > .grid
+  > .grid-item
+  > .grid-item-text
+  > .line-2
+  > .btn
+  > button {
   width: 96.878px;
   height: 30px;
   flex-shrink: 0;
@@ -304,6 +315,10 @@ nav > a {
   font-weight: 700;
   line-height: normal;
   border: none;
+}
+
+.planned-plants > .grid > .grid-item > .grid-item-text > .line-2 > .icon {
+  display: none;
 }
 
 .planned-plants > .grid > .grid-item > .grid-item-text > .line-1 {
@@ -342,10 +357,6 @@ nav > a {
   padding-bottom: 108px;
 }
 
-.season-panel > .reverse > .right-panel {
-  margin-left: 40px;
-}
-
 .season-panel > .reverse > .right-panel > button {
   align-self: flex-start;
   width: 281px;
@@ -357,7 +368,8 @@ nav > a {
 }
 
 .season-panel > .reverse > .left-panel {
-  margin-right: 37px;
+  margin-right: 40px;
+  margin-left: 0px;
 }
 
 .contact-panel {
@@ -638,9 +650,6 @@ footer > a {
     margin: 0px 11px;
   }
 
-  .planned-plants > .show-more {
-  }
-
   .planned-plants > .show-more > button {
     width: 115.674px;
     height: 34.715px;
@@ -650,6 +659,7 @@ footer > a {
 
   .season-panel > .reverse {
     flex-direction: column;
+    padding-bottom: 50px;
   }
 
   .season-panel > .reverse > .left-panel {
@@ -667,5 +677,56 @@ footer > a {
     height: 35px;
     border-radius: 9px;
     font-size: 16px;
+  }
+
+  .contact-panel {
+    flex-direction: column-reverse;
+    height: 865px;
+  }
+
+  .contact-panel > .left-panel {
+    width: 100%;
+    height: 401px;
+  }
+
+  .contact-panel > .left-panel > .top-item > h1 {
+    font-size: 32px;
+  }
+
+  .contact-panel > .left-panel > .bottom-item > .item-1 {
+    font-size: 12px;
+  }
+
+  .contact-panel > .left-panel > .bottom-item > .item-1 > img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .contact-panel > .left-panel > .bottom-item > .item-2 {
+    font-size: 12px;
+  }
+
+  .contact-panel > .left-panel > .bottom-item > .item-2 > img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .contact-panel > .right-panel {
+    width: 100%;
+    height: 401px;
+  }
+
+  .contact-panel > .right-panel > img {
+    width: 189.875px;
+    height: 186px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  footer {
+    height: 63px;
+  }
+
+  footer > a {
+    font-size: 12px;
   }
 }
