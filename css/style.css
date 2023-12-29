@@ -32,6 +32,10 @@ header {
   height: 70vh;
 }
 
+header > .left-panel > .burgir {
+  display: none;
+}
+
 header > .left-panel {
   display: flex;
   justify-content: center;
@@ -149,7 +153,6 @@ nav > a {
   justify-content: center;
   text-align: left;
   width: 467px;
-  height: 100%;
   margin-left: 67px;
   padding-right: 41px;
 }
@@ -454,4 +457,215 @@ footer > a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media only screen and (max-width: 390px) and (orientation: portrait) {
+  .content {
+    width: 390px;
+    margin: 0px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  header > .left-panel {
+    height: 390px;
+    width: 100%;
+  }
+
+  header > .right-panel {
+    flex-direction: row;
+    height: 195px;
+    width: 100%;
+  }
+
+  header > .right-panel > .header-item {
+    height: 195px;
+    width: 195px;
+  }
+
+  header > .right-panel > .header-item > img {
+    width: 111.44px;
+    height: 124px;
+  }
+
+  header > .left-panel > .header-item > img {
+    width: 111.44px;
+    height: 124px;
+  }
+
+  header > .left-panel > .burgir {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 13px;
+    margin-top: 13px;
+    width: 40px;
+    height: 30px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .season-panel > h1 {
+    font-size: 24px;
+    margin: 0px;
+    padding-top: 31px;
+  }
+
+  .season-panel > .season-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 41px;
+  }
+
+  .season-panel > .season-content > .left-panel {
+    width: 241px;
+    height: 241px;
+    border-radius: 239px;
+    border: 14px solid #0a846e;
+    background: #0a846e;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .season-panel > .season-content > .left-panel > img {
+    width: 126px;
+    height: 124px;
+  }
+
+  .season-panel > .season-content > .right-panel {
+    text-align: center;
+    width: 390px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .season-panel > .season-content > .right-panel > h1 {
+    font-size: 16px;
+  }
+
+  .season-panel > .season-content > .right-panel > p {
+    font-size: 14px;
+  }
+
+  .season-panel > .season-content > .right-panel > button {
+    width: 98.635px;
+    height: 34.715px;
+    font-size: 16px;
+    align-self: center;
+    margin-bottom: 30px;
+  }
+
+  .bottom-divider > img {
+    width: 202.003px;
+  }
+
+  .planned-plants > h1 {
+    font-size: 16px;
+  }
+
+  .planned-plants > .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 0px;
+    gap: 12px 13.5px;
+  }
+
+  .planned-plants > .grid > .grid-item {
+    width: 175px;
+    height: 220px;
+    flex-shrink: 0;
+    background: #fff;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .planned-plants > .grid > .grid-item > .flex-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 72%;
+  }
+
+  .planned-plants > .grid > .grid-item > .grid-item-text {
+    width: 100%;
+    height: 28%;
+  }
+
+  .planned-plants > .grid > .grid-item > .flex-1 > img {
+    display: none;
+  }
+
+  .planned-plants > .grid > .grid-item > .grid-item-text > .line-1 > h1 {
+    font-size: 14px;
+  }
+
+  .planned-plants > .grid > .grid-item > .grid-item-text > .line-1 > h3 {
+    font-size: 10px;
+  }
+
+  .planned-plants > .grid > .grid-item > .grid-item-text > .line-2 > p {
+    font-size: 10px;
+  }
+
+  .planned-plants > .grid > .grid-item > .grid-item-text > .line-2 > .btn {
+    display: none;
+  }
+
+  .planned-plants > .grid > .grid-item > .grid-item-text > .line-2 > .icon {
+    display: block;
+  }
+
+  .planned-plants > .grid > .grid-item > .grid-item-text > .line-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 11px;
+  }
+
+  .planned-plants > .grid > .grid-item > .grid-item-text > .line-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 11px;
+  }
+
+  .planned-plants > .show-more {
+  }
+
+  .planned-plants > .show-more > button {
+    width: 115.674px;
+    height: 34.715px;
+    font-size: 16px;
+    margin-top: 31px;
+  }
+
+  .season-panel > .reverse {
+    flex-direction: column;
+  }
+
+  .season-panel > .reverse > .left-panel {
+    margin-bottom: 47px;
+    margin-right: 0px;
+  }
+
+  .season-panel > .reverse > .right-panel {
+    margin-left: 0px;
+  }
+
+  .season-panel > .reverse > .right-panel > button {
+    align-self: center;
+    width: 179px;
+    height: 35px;
+    border-radius: 9px;
+    font-size: 16px;
+  }
 }
