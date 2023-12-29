@@ -168,8 +168,6 @@ header > h1 {
 .planned-plants > .plant-container {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  padding-left: 37px;
   gap: 29px;
 }
 .planned-plants > .plant-container > .plant-item {
