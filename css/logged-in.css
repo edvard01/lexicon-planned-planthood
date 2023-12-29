@@ -13,6 +13,11 @@
   src: url(assets/lato/Lato-Black.ttf);
 }
 
+@font-face {
+  font-family: Inter;
+  src: url(assets/inter/Inter-VariableFont_slnt\wght.ttf);
+}
+
 html body {
   margin: 0;
   padding: 0;
