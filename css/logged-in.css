@@ -169,6 +169,7 @@ header > h1 {
   display: flex;
   flex-direction: row;
   gap: 29px;
+  margin-left: 35px;
 }
 .planned-plants > .plant-container > .plant-item {
   overflow: hidden;
